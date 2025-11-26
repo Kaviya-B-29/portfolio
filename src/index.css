@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200;
+  scroll-behavior: smooth;
+}
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 15s linear infinite;
+}
+.sparkle-ring {
+  pointer-events: none;
+  border-radius: 50%;
+  border: 1.5px solid transparent;
+  background: conic-gradient(
+      from 0deg,
+      rgba(255, 255, 255, 0.0) 0deg,
+      rgba(255, 255, 255, 0.9) 45deg,
+      rgba(255, 255, 255, 0.0) 90deg,
+      rgba(255, 255, 255, 0.6) 135deg,
+      rgba(255, 255, 255, 0.0) 180deg,
+      rgba(255, 255, 255, 0.4) 225deg,
+      rgba(255, 255, 255, 0.0) 360deg
+    )
+    border-box;
+  mask:
+    radial-gradient(farthest-side, transparent calc(100% - 2px), black 0);
+  animation: rotateSparkle 6s linear infinite;
+}
+
+@keyframes rotateSparkle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.sparkle-arc {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  
+  /* This creates a thin C shape using borders */
+  border: 2px solid transparent;
+  border-right-color: rgba(255, 255, 255, 0.9);
+  border-top-color: rgba(255, 255, 255, 0.9);
+
+  /* Glow */
+  box-shadow: 
+    0 0 6px rgba(255, 255, 255, 0.7),
+    0 0 12px rgba(255, 255, 255, 0.5);
+
+  /* Sparkle animation */
+  animation: arcSpin 4s linear infinite;
+}
+
+/* Rotation for sparkle */
+@keyframes arcSpin {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(180deg) scale(1.03);
+    opacity: 0.9;
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 1;
+  }
+}
+/* optional: you can add as a Tailwind plugin variant too */
+.section-border-effect {
+  @apply relative rounded-xl p-6 shadow-[0_0_20px_2px_rgba(255,255,255,0.05)] bg-white/5;
+}
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  animation: gradient 15s ease infinite;
+}
