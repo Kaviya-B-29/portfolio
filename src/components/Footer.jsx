@@ -26,6 +26,8 @@ export  function SparklingDivider() {const sparkleCount = 12; // more sparkles
 
 
 export default function Footer() {
+  const phoneNumber = import.meta.env.VITE_PHONE_NUMBER;
+
   return (
     <footer className="relative mt-20">
       
@@ -48,12 +50,16 @@ export default function Footer() {
             icon: <FaGithub size={22} />,
             href: "https://github.com/Kaviya-B-29",
             hover: "hover:text-pink-400"
-          },{
-            icon: <FaPhoneAlt size={22} />,
-            href: "#phone-link",       // placeholder
-            hover: "hover:text-green-400"
+          },
 
-          },{
+{
+    icon: <FaPhoneAlt />,
+    label: "Phone",
+    href: `tel:${phoneNumber}`, // dynamically added
+    hover: "hover:text-green-400"
+
+  },
+,{
             icon: <FaEnvelope size={22} />,
             href: "https://mail.google.com/mail/?view=cm&fs=1&to=kaviya2909@gmail.com",
             hover: "hover:text-red-400"
