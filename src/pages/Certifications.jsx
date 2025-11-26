@@ -21,7 +21,7 @@ export default function Certifications() {
       transition={{ duration: 0.5 }}
       className="max-w-4xl mx-auto py-10"
     >
-      <h1 className="text-4xl font-bold mb-8">Certifications</h1>
+      <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-8">Certifications</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {certifications.map((cert, index) => (

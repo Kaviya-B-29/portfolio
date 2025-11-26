@@ -47,7 +47,7 @@ export default function RightSidebar() {
     <div className="w-36 h-12 rounded-lg bg-gradient-to-r from-purple-400 to-blue-400 opacity-20 blur-2xl"></div>
   </div>
 
-  <h1 className="relative text-white font-extrabold text-xl sm:text-2xl drop-shadow-lg flex sm:flex-row flex-col items-center sm:gap-0 gap-1">
+  <h1 className="relative text-gray-900 dark:text-white font-extrabold text-xl sm:text-2xl drop-shadow-lg flex sm:flex-row flex-col items-center sm:gap-0 gap-1">
     {Array.from("KAVIYA").map((char, i) => (
       <span
         key={i}

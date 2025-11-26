@@ -25,7 +25,7 @@ export default function Skills() {
       transition={{ duration: 0.5 }}
       className="max-w-4xl mx-auto py-10"
     >
-      <h1 className="text-4xl font-bold mb-8">Skills</h1>
+      <h1 className="text-4xl text-gray-900 dark:text-white font-bold mb-8">Skills</h1>
       <div className="flex flex-wrap gap-6">
         {skills.map((skill, index) => (
           <div

@@ -29,7 +29,7 @@ export default function Footer() {
   const phoneNumber = import.meta.env.VITE_PHONE_NUMBER;
 
   return (
-    <footer className="relative mt-20">
+    <footer className="relative mt-20 text-gray-900 dark:text-white">
       
       <SparklingDivider />
 

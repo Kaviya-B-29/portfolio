@@ -10,7 +10,7 @@ export default function About() {
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: 50 }}
       transition={{ duration: 0.5 }}
-      className="max-w-5xl mx-auto py-10 p-6 rounded-xl relative
+      className="max-w-5xl mx-auto py-10 p-6 rounded-xl relative text-gray-900 dark:text-white
                  shadow-[0_0_20px_2px_rgba(255,255,255,0.05)] bg-white/5"
     >
       <h1 className="text-4xl font-bold mb-6">About Me</h1>

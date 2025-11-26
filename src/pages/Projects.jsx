@@ -71,7 +71,7 @@ export default function Projects() {
 >
 
             <h2 className="text-2xl font-semibold mb-3">{proj.title}</h2>
-            <p className="mb-4 text-gray-100">{proj.description}</p>
+            <p className="mb-4 text-gray-900 dark:text-white">{proj.description}</p>
             
             <h3 className="font-semibold mb-2">Key Features:</h3>
             <ul className="list-disc list-inside mb-4 text-gray-00">
