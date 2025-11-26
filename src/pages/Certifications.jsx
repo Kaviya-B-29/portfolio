@@ -29,8 +29,8 @@ export default function Certifications() {
             key={index}
             className="flex flex-col items-start p-3 rounded-lg shadow hover:shadow-lg transition bg-white/10 backdrop-blur-md border border-white/20"
           >
-            <p className="text-gray-200 font-medium">{cert}</p>
-            <span className="text-gray-400 text-xs mt-1">GUVI</span>
+            <p className="text-gray-200  dark:text-white font-medium">{cert}</p>
+            <span className="text-gray-400  dark:text-white text-xs mt-1">GUVI</span>
           </div>
         ))}
       </div>

@@ -80,7 +80,7 @@ export default function Projects() {
               ))}
             </ul>
             
-            <p className="text-sm font-mono text-gray-100">
+            <p className="text-sm font-mono text-gray-100  dark:text-white">
               <span className="font-semibold">Tech Stack:</span> {proj.tech}
             </p>
           </div>
